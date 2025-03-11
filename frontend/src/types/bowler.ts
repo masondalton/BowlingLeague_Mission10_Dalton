@@ -1,4 +1,4 @@
-export interface Bowler {
+export type Bowler = {
   bowlerId: number;
 
   bowlerLastName: string;
@@ -18,4 +18,4 @@ export interface Bowler {
   bowlerPhoneNumber: string;
 
   teamId: number;
-}
+};

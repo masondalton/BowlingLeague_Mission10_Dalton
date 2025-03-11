@@ -10,7 +10,7 @@ function BowlerList() {
       const data = await response.json();
       setBowlers(data);
     };
-    fetchBowlers;
+    fetchBowlers();
   }, []);
 
   return (
@@ -19,7 +19,7 @@ function BowlerList() {
         <thead>
           <tr>
             <th>First Name</th>
-            <th>Middle Name</th>
+            <th>Middle Initial</th>
             <th>Last Name</th>
             <th>Team Name</th>
             <th>Street</th>
