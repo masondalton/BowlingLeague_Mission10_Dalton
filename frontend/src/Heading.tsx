@@ -1,4 +1,5 @@
 function Heading() {
+  // Basic compenent for displaying intro to the webstie
   return (
     <>
       <h1>Sharks and Marlins</h1>

@@ -1,3 +1,5 @@
+// Frontend model for the bowler data,
+// notice teamName is changed from teamId because of backend conversion
 export type Bowler = {
   bowlerId: number;
 
@@ -17,5 +19,5 @@ export type Bowler = {
 
   bowlerPhoneNumber: string;
 
-  teamId: number;
+  teamName: string;
 };

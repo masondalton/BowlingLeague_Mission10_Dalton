@@ -10,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Connect context to database connection
 builder.Services.AddDbContext<BowlingLeagueContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("BowlingConnection")));
 
@@ -21,7 +22,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+// Open access to the frontend on port 3000
 app.UseCors(x => x.WithOrigins("http://localhost:3000"));
 app.UseHttpsRedirection();
 
