@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace BowlingLeague.Data;
 
 public partial class Bowler
 {
+    [Key]
     public int BowlerId { get; set; }
 
     public string? BowlerLastName { get; set; }
